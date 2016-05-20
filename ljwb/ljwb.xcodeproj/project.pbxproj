@@ -12,6 +12,8 @@
 		F58BDCE91CE9BA8A000576F7 /* DiscoverTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58BDCE81CE9BA8A000576F7 /* DiscoverTableViewController.swift */; };
 		F58BDCEB1CE9BA99000576F7 /* MessageTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58BDCEA1CE9BA99000576F7 /* MessageTableViewController.swift */; };
 		F58BDCED1CE9BAA8000576F7 /* ProfileTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58BDCEC1CE9BAA8000576F7 /* ProfileTableViewController.swift */; };
+		F59A980D1CEEB5320099CFAB /* MainVCSettings.json in Resources */ = {isa = PBXBuildFile; fileRef = F59A980B1CEEB5320099CFAB /* MainVCSettings.json */; };
+		F59A980E1CEEB5320099CFAB /* NullViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59A980C1CEEB5320099CFAB /* NullViewController.swift */; };
 		F5C136F61CE9A337008E7539 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5C136F51CE9A337008E7539 /* AppDelegate.swift */; };
 		F5C136F81CE9A337008E7539 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5C136F71CE9A337008E7539 /* ViewController.swift */; };
 		F5C136FD1CE9A337008E7539 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5C136FC1CE9A337008E7539 /* Assets.xcassets */; };
@@ -42,6 +44,8 @@
 		F58BDCE81CE9BA8A000576F7 /* DiscoverTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscoverTableViewController.swift; sourceTree = "<group>"; };
 		F58BDCEA1CE9BA99000576F7 /* MessageTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageTableViewController.swift; sourceTree = "<group>"; };
 		F58BDCEC1CE9BAA8000576F7 /* ProfileTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileTableViewController.swift; sourceTree = "<group>"; };
+		F59A980B1CEEB5320099CFAB /* MainVCSettings.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = MainVCSettings.json; sourceTree = "<group>"; };
+		F59A980C1CEEB5320099CFAB /* NullViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NullViewController.swift; sourceTree = "<group>"; };
 		F5C136F21CE9A337008E7539 /* ljwb.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ljwb.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5C136F51CE9A337008E7539 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F5C136F71CE9A337008E7539 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -120,6 +124,7 @@
 		F58BDCE01CE9B9D0000576F7 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				F59A980A1CEEB5320099CFAB /* Resource */,
 				F58BDCE41CE9BA4E000576F7 /* MainTabBarController.swift */,
 			);
 			path = Main;
@@ -146,6 +151,15 @@
 			children = (
 			);
 			path = Tools;
+			sourceTree = "<group>";
+		};
+		F59A980A1CEEB5320099CFAB /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				F59A980B1CEEB5320099CFAB /* MainVCSettings.json */,
+				F59A980C1CEEB5320099CFAB /* NullViewController.swift */,
+			);
+			path = Resource;
 			sourceTree = "<group>";
 		};
 		F5C136E91CE9A337008E7539 = {
@@ -302,6 +316,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F59A980D1CEEB5320099CFAB /* MainVCSettings.json in Resources */,
 				F5C136FD1CE9A337008E7539 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -332,6 +347,7 @@
 				F5C136F81CE9A337008E7539 /* ViewController.swift in Sources */,
 				F5C136F61CE9A337008E7539 /* AppDelegate.swift in Sources */,
 				F58BDCE91CE9BA8A000576F7 /* DiscoverTableViewController.swift in Sources */,
+				F59A980E1CEEB5320099CFAB /* NullViewController.swift in Sources */,
 				F58BDCEB1CE9BA99000576F7 /* MessageTableViewController.swift in Sources */,
 				F58BDCE51CE9BA4E000576F7 /* MainTabBarController.swift in Sources */,
 			);
