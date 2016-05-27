@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		7100CF1EB3DABA25B74CD108 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE15543F493D4AE3D30CB75B /* Pods.framework */; };
+		F53C04A91CF847F400E68AC4 /* UIBarButtonItem+Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53C04A81CF847F400E68AC4 /* UIBarButtonItem+Category.swift */; };
+		F53C04AB1CF84A5400E68AC4 /* TitleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53C04AA1CF84A5400E68AC4 /* TitleButton.swift */; };
 		F58BDCE51CE9BA4E000576F7 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58BDCE41CE9BA4E000576F7 /* MainTabBarController.swift */; };
 		F58BDCE71CE9BA6D000576F7 /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58BDCE61CE9BA6D000576F7 /* HomeTableViewController.swift */; };
 		F58BDCE91CE9BA8A000576F7 /* DiscoverTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58BDCE81CE9BA8A000576F7 /* DiscoverTableViewController.swift */; };
@@ -44,6 +46,8 @@
 		700F6C65E197D84E1580E45C /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		AE15543F493D4AE3D30CB75B /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2390FE2753C85FBD1865F50 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		F53C04A81CF847F400E68AC4 /* UIBarButtonItem+Category.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+Category.swift"; sourceTree = "<group>"; };
+		F53C04AA1CF84A5400E68AC4 /* TitleButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitleButton.swift; sourceTree = "<group>"; };
 		F58BDCE41CE9BA4E000576F7 /* MainTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		F58BDCE61CE9BA6D000576F7 /* HomeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTableViewController.swift; sourceTree = "<group>"; };
 		F58BDCE81CE9BA8A000576F7 /* DiscoverTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscoverTableViewController.swift; sourceTree = "<group>"; };
@@ -108,10 +112,19 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		F53C04A71CF847E700E68AC4 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				F53C04A81CF847F400E68AC4 /* UIBarButtonItem+Category.swift */,
+				F53C04AA1CF84A5400E68AC4 /* TitleButton.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
 		F58BDCDC1CE9B9D0000576F7 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				F58BDCDD1CE9B9D0000576F7 /* Common */,
+				F53C04A71CF847E700E68AC4 /* Common */,
 				F58BDCDE1CE9B9D0000576F7 /* Discover */,
 				F58BDCDF1CE9B9D0000576F7 /* Home */,
 				F58BDCE01CE9B9D0000576F7 /* Main */,
@@ -120,13 +133,6 @@
 				F58BDCE31CE9B9D0000576F7 /* Tools */,
 			);
 			path = Classes;
-			sourceTree = "<group>";
-		};
-		F58BDCDD1CE9B9D0000576F7 /* Common */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Common;
 			sourceTree = "<group>";
 		};
 		F58BDCDE1CE9B9D0000576F7 /* Discover */ = {
@@ -424,10 +430,12 @@
 				F58BDCED1CE9BAA8000576F7 /* ProfileTableViewController.swift in Sources */,
 				F58BDCE71CE9BA6D000576F7 /* HomeTableViewController.swift in Sources */,
 				F5C136F61CE9A337008E7539 /* AppDelegate.swift in Sources */,
+				F53C04AB1CF84A5400E68AC4 /* TitleButton.swift in Sources */,
 				F58BDCE91CE9BA8A000576F7 /* DiscoverTableViewController.swift in Sources */,
 				F59A980E1CEEB5320099CFAB /* NullViewController.swift in Sources */,
 				F59A98121CEEC00A0099CFAB /* VisitorView.swift in Sources */,
 				F58BDCEB1CE9BA99000576F7 /* MessageTableViewController.swift in Sources */,
+				F53C04A91CF847F400E68AC4 /* UIBarButtonItem+Category.swift in Sources */,
 				F58BDCE51CE9BA4E000576F7 /* MainTabBarController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -26,11 +26,6 @@ class BaseTableViewController: UITableViewController,VisitorViewDelegate {
         visitorView?.delegate = self
         view = visitorView
         
-        //设置导航条未登录按钮
-        
-        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "注册", style: UIBarButtonItemStyle.Plain, target: self, action: "registerBtnWillClick")
-        
-        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "登录", style: UIBarButtonItemStyle.Plain, target: self, action: "loginBtnWillClick")
     }
 
     override func viewDidLoad() {
