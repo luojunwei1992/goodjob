@@ -74,8 +74,6 @@ class MainTabBarController: UITabBarController {
         vc.tabBarItem.image = UIImage(named: imageName)
         vc.tabBarItem.selectedImage = UIImage(named: imageName + "_highlighted")
         
-        tabBar.tintColor = UIColor.orangeColor()
-        
         let nav = UINavigationController()
         
         nav.addChildViewController(vc)
