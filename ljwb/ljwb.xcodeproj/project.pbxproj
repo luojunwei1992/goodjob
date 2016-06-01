@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		7100CF1EB3DABA25B74CD108 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE15543F493D4AE3D30CB75B /* Pods.framework */; };
+		F5104D001CFECC5C00344740 /* PopoverPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5104CFF1CFECC5C00344740 /* PopoverPresentationController.swift */; };
+		F5104D041CFEDF3500344740 /* PopoverViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5104D031CFEDF3500344740 /* PopoverViewController.storyboard */; };
 		F53C04A91CF847F400E68AC4 /* UIBarButtonItem+Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53C04A81CF847F400E68AC4 /* UIBarButtonItem+Category.swift */; };
 		F53C04AB1CF84A5400E68AC4 /* TitleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53C04AA1CF84A5400E68AC4 /* TitleButton.swift */; };
 		F58BDCE51CE9BA4E000576F7 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58BDCE41CE9BA4E000576F7 /* MainTabBarController.swift */; };
@@ -23,6 +25,7 @@
 		F5C136FD1CE9A337008E7539 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5C136FC1CE9A337008E7539 /* Assets.xcassets */; };
 		F5C1370B1CE9A337008E7539 /* ljwbTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5C1370A1CE9A337008E7539 /* ljwbTests.swift */; };
 		F5C137161CE9A337008E7539 /* ljwbUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5C137151CE9A337008E7539 /* ljwbUITests.swift */; };
+		F5C7D1801CFE75B80045DFD5 /* PopoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5C7D17F1CFE75B80045DFD5 /* PopoverViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +49,8 @@
 		700F6C65E197D84E1580E45C /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		AE15543F493D4AE3D30CB75B /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2390FE2753C85FBD1865F50 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		F5104CFF1CFECC5C00344740 /* PopoverPresentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopoverPresentationController.swift; sourceTree = "<group>"; };
+		F5104D031CFEDF3500344740 /* PopoverViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PopoverViewController.storyboard; sourceTree = "<group>"; };
 		F53C04A81CF847F400E68AC4 /* UIBarButtonItem+Category.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+Category.swift"; sourceTree = "<group>"; };
 		F53C04AA1CF84A5400E68AC4 /* TitleButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitleButton.swift; sourceTree = "<group>"; };
 		F58BDCE41CE9BA4E000576F7 /* MainTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
@@ -67,6 +72,7 @@
 		F5C137111CE9A337008E7539 /* ljwbUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ljwbUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5C137151CE9A337008E7539 /* ljwbUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ljwbUITests.swift; sourceTree = "<group>"; };
 		F5C137171CE9A337008E7539 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F5C7D17F1CFE75B80045DFD5 /* PopoverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopoverViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,6 +152,7 @@
 		F58BDCDF1CE9B9D0000576F7 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				F5C7D17E1CFE75950045DFD5 /* Popover */,
 				F58BDCE61CE9BA6D000576F7 /* HomeTableViewController.swift */,
 			);
 			path = Home;
@@ -243,6 +250,16 @@
 				F5C137171CE9A337008E7539 /* Info.plist */,
 			);
 			path = ljwbUITests;
+			sourceTree = "<group>";
+		};
+		F5C7D17E1CFE75950045DFD5 /* Popover */ = {
+			isa = PBXGroup;
+			children = (
+				F5104D031CFEDF3500344740 /* PopoverViewController.storyboard */,
+				F5C7D17F1CFE75B80045DFD5 /* PopoverViewController.swift */,
+				F5104CFF1CFECC5C00344740 /* PopoverPresentationController.swift */,
+			);
+			path = Popover;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -352,6 +369,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5104D041CFEDF3500344740 /* PopoverViewController.storyboard in Resources */,
 				F59A980D1CEEB5320099CFAB /* MainVCSettings.json in Resources */,
 				F5C136FD1CE9A337008E7539 /* Assets.xcassets in Resources */,
 			);
@@ -426,10 +444,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5104D001CFECC5C00344740 /* PopoverPresentationController.swift in Sources */,
 				F59A98101CEEBFAF0099CFAB /* BaseTableViewController.swift in Sources */,
 				F58BDCED1CE9BAA8000576F7 /* ProfileTableViewController.swift in Sources */,
 				F58BDCE71CE9BA6D000576F7 /* HomeTableViewController.swift in Sources */,
 				F5C136F61CE9A337008E7539 /* AppDelegate.swift in Sources */,
+				F5C7D1801CFE75B80045DFD5 /* PopoverViewController.swift in Sources */,
 				F53C04AB1CF84A5400E68AC4 /* TitleButton.swift in Sources */,
 				F58BDCE91CE9BA8A000576F7 /* DiscoverTableViewController.swift in Sources */,
 				F59A980E1CEEB5320099CFAB /* NullViewController.swift in Sources */,
