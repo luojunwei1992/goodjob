@@ -26,6 +26,7 @@
 		F5C1370B1CE9A337008E7539 /* ljwbTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5C1370A1CE9A337008E7539 /* ljwbTests.swift */; };
 		F5C137161CE9A337008E7539 /* ljwbUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5C137151CE9A337008E7539 /* ljwbUITests.swift */; };
 		F5C7D1801CFE75B80045DFD5 /* PopoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5C7D17F1CFE75B80045DFD5 /* PopoverViewController.swift */; };
+		F5EE53F51D00034600FF4539 /* PopoverAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EE53F41D00034600FF4539 /* PopoverAnimator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +74,7 @@
 		F5C137151CE9A337008E7539 /* ljwbUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ljwbUITests.swift; sourceTree = "<group>"; };
 		F5C137171CE9A337008E7539 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F5C7D17F1CFE75B80045DFD5 /* PopoverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopoverViewController.swift; sourceTree = "<group>"; };
+		F5EE53F41D00034600FF4539 /* PopoverAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopoverAnimator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -258,6 +260,7 @@
 				F5104D031CFEDF3500344740 /* PopoverViewController.storyboard */,
 				F5C7D17F1CFE75B80045DFD5 /* PopoverViewController.swift */,
 				F5104CFF1CFECC5C00344740 /* PopoverPresentationController.swift */,
+				F5EE53F41D00034600FF4539 /* PopoverAnimator.swift */,
 			);
 			path = Popover;
 			sourceTree = "<group>";
@@ -452,6 +455,7 @@
 				F5C7D1801CFE75B80045DFD5 /* PopoverViewController.swift in Sources */,
 				F53C04AB1CF84A5400E68AC4 /* TitleButton.swift in Sources */,
 				F58BDCE91CE9BA8A000576F7 /* DiscoverTableViewController.swift in Sources */,
+				F5EE53F51D00034600FF4539 /* PopoverAnimator.swift in Sources */,
 				F59A980E1CEEB5320099CFAB /* NullViewController.swift in Sources */,
 				F59A98121CEEC00A0099CFAB /* VisitorView.swift in Sources */,
 				F58BDCEB1CE9BA99000576F7 /* MessageTableViewController.swift in Sources */,

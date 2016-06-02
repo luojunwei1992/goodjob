@@ -21,7 +21,24 @@ class HomeTableViewController: BaseTableViewController {
         
         //登录状态c
         setupNav()
-
+        
+        //注册通知
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: "change", name: LJPopoverAnimatorWillShow, object: nil)
+        
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: "change", name: LJPopoverAnimatorWillDismiss, object: nil)
+        
+    }
+    
+    deinit{
+        
+        NSNotificationCenter.defaultCenter().removeObserver(self)
+    }
+    
+    func change(){
+        
+        let titleBtn = navigationItem.titleView as! TitleButton
+        
+        titleBtn.selected = !titleBtn.selected
     }
     
     private func setupNav(){
@@ -39,12 +56,10 @@ class HomeTableViewController: BaseTableViewController {
     
      func titleBtnClick(btn: UIButton){
         
-        btn.selected = !btn.selected
-        
         let sb = UIStoryboard(name: "PopoverViewController", bundle: nil)
         let vc = sb.instantiateInitialViewController()
         
-        vc?.transitioningDelegate = self
+        vc?.transitioningDelegate = popverAnimator
         
         vc?.modalPresentationStyle = UIModalPresentationStyle.Custom
         
@@ -69,66 +84,14 @@ class HomeTableViewController: BaseTableViewController {
         return pop
     }()
     
-    /// 记录当前是否是展开
-    var isPresent: Bool = false
-
+  
+    private lazy var popverAnimator:PopoverAnimator = {
+        
+        let pa = PopoverAnimator()
+        
+        return pa
+    }()
+    
 }
 
 
-extension HomeTableViewController: UIViewControllerTransitioningDelegate, UIViewControllerAnimatedTransitioning{
-
-    func presentationControllerForPresentedViewController(presented: UIViewController, presentingViewController presenting: UIViewController, sourceViewController source: UIViewController) -> UIPresentationController? {
-    
-        return PopoverPresentationController(presentedViewController: presented, presentingViewController:  presenting)
-    }
-    
-//  告诉系统谁来负责modal的展现动画  谁来负责，只要实现该方法，系统自带的动画就没有了   presented  被展现的视图 presenting 发起的视图
-    func animationControllerForPresentedController(presented: UIViewController, presentingController presenting: UIViewController, sourceController source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
-        
-        isPresent = true
-        return self
-        
-    }
-    
-//    告诉系统谁来负责modal的消失动画 dismissed 被关闭的视图
-    func animationControllerForDismissedController(dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
-        
-        isPresent = false
-        
-        return self
-    }
-    
-//    返回时长  transitionContext 里面保存了动画需要的所有参数
-    func transitionDuration(transitionContext: UIViewControllerContextTransitioning?) -> NSTimeInterval{
-        
-        return 0.5
-    }
-    
-    
-//    如何动画
-    func animateTransition(transitionContext: UIViewControllerContextTransitioning) {
-        
-        if isPresent{
-            
-            let toView = transitionContext.viewForKey(UITransitionContextToViewKey)
-            
-            toView?.transform = CGAffineTransformMakeScale(1.0, 0.001)
-            
-            transitionContext.containerView()?.addSubview(toView!)
-            
-            toView?.layer.anchorPoint = CGPoint(x: 0.5, y: 0)
-            
-            UIView.animateWithDuration(0.5, animations: { 
-                
-                //清空transform
-                toView?.transform = CGAffineTransformIdentity
-                
-                }, completion: { (_) in
-                    
-                    //动画执行完后告诉系统
-                    transitionContext.completeTransition(true)
-            })
-        
-        }
-    }
-}
